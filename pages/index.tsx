@@ -1,15 +1,12 @@
 import { NextPage } from 'next'
-import Link from 'next/link'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
+import Link from '../components/Link'
 
 type Props1 = {
   id: string;
-}
-type Props2 = {
-  count: number;
 }
 
 const Li = styled.li`
@@ -21,6 +18,10 @@ const PostLink = ({ id }: Props1) => (
     <Link href={`/p/${id}`}>{id}</Link>
   </Li>
 )
+
+type Props2 = {
+  count: number;
+}
 
 const Blog: NextPage<Props2> = ({ count }) => {
   return (

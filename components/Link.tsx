@@ -1,18 +1,27 @@
 import Router from 'next/router'
+import styled from 'styled-components'
+
+type AProps = {
+  color?: string;
+}
+
+const A = styled.a`
+  cursor: pointer;
+  color: ${(props: AProps) => props.color || 'blue'};
+  text-decoration: underline;
+`
 
 type Props = {
   href: string;
   children: any;
+  color?: string;
 }
 
-const Link = ({ href, children }: Props) => {
+const Link = ({ href, children, color }: Props) => {
   return (
-    <a
-      style={{ cursor: 'pointer', color: 'blue', textDecoration: 'underline' }}
-      onClick={() => Router.push(href)}
-    >
+    <A color={color} onClick={() => Router.push(href)}>
       {children}
-    </a>
+    </A>
   )
 }
 
