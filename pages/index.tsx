@@ -1,9 +1,10 @@
 import { NextPage } from 'next'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 import Layout from '../components/Layout'
-import Link from '../components/Link'
+// import Link from '../components/Link'
 
 type Props1 = {
   id: string;

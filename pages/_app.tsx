@@ -1,23 +1,5 @@
-// import App from 'next/app'
-
-// class MyApp extends App {
-//   static async getInitialProps ({ Component, ctx }) {
-//     const pageProps = Component.getInitialProps
-//       ? await Component.getInitialProps(ctx)
-//       : {}
-
-//     return { pageProps }
-//   }
-
-//   render () {
-//     const { Component, pageProps } = this.props
-//
-//     return (
-//       <Component {...pageProps} />
-//     )
-//   }
-// }
-
+// import * as _ from '../pollyfills'
+import 'core-js'
 import { Provider } from 'react-redux'
 import { configureStore } from '@reduxjs/toolkit'
 import { NextPage } from 'next'
