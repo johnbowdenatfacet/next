@@ -1,4 +1,4 @@
-// import * as _ from '../pollyfills'
+// import '../pollyfills'
 import 'core-js'
 import { Provider } from 'react-redux'
 import { configureStore } from '@reduxjs/toolkit'
