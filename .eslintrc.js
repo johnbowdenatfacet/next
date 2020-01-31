@@ -42,6 +42,7 @@ module.exports = {
     'no-constant-condition': 0,
     'eqeqeq': 0,
     'object-curly-spacing': ['error', 'always'],
+    // 'css-ruleorselectorexpected': ['error', 'never'],
     'react/react-in-jsx-scope': 0,
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
