@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import Layout from '../components/Layout'
 
 type Props = {
-  abc: string;
+  abc?: string;
   count: number;
 }
 
@@ -23,4 +23,8 @@ const mapStateToProps = (state: any) => {
   }
 }
 
-export default connect(mapStateToProps)(About)
+const X = connect(mapStateToProps)(About)
+
+const Wrapped = () => <div><X /></div>
+
+export default Wrapped
