@@ -1,7 +1,11 @@
+import { NextPage } from 'next'
 import { useRouter } from 'next/router'
+
 import Layout from '../components/Layout'
 
-const Page = () => {
+type Props = {}
+
+const Page: NextPage<Props> = () => {
   const router = useRouter()
 
   return (

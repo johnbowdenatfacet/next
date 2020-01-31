@@ -4,8 +4,6 @@ import Layout from '../components/Layout'
 
 type Props = { abc: string; }
 
-const a = 'a123'
-
 const About: NextPage<Props> = (props) => {
   return (
     <Layout>
