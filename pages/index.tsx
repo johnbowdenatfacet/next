@@ -44,8 +44,8 @@ const mapStateToProps = (state: any) => {
   }
 }
 
-const X = connect(mapStateToProps)(Blog)
+const ConnectedBlog = connect(mapStateToProps)(Blog)
 
-const Wrapped = () => <div><X /></div>
+const Wrapped = () => <div><ConnectedBlog /></div>
 
 export default Wrapped

@@ -10,10 +10,10 @@ type Props = {
   children: any;
 }
 
-const Layout = (props: Props) => (
+const Layout = ({ children }: Props) => (
   <div style={layoutStyle}>
     <Header />
-    {props.children}
+    {children}
   </div>
 )
 

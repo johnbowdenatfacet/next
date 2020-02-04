@@ -21,5 +21,5 @@ const Wrapper = ({ children, increment }: WrapperProps) => {
 }
 
 export default connect(null, {
-  increment: () => counter.actions.increment()
+  increment: counter.actions.increment
 })(Wrapper)
